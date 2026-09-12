@@ -22,14 +22,12 @@ body {
 }
 
 header {
-
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
     gap: 5px;
 
-    /* Header color */
-
+    /* Header colour */
     background: rgba(48, 126, 72, 0.877);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -37,27 +35,23 @@ header {
     border-radius: 16px;
     margin: 40px 20px 20px;
     padding: 10px 20px;
-
 }
 
-
-
 header h1 {
-    font-family: 'Header font', sans-serif;
+    font-family: "Caveat Brush", sans-serif;
+    font-size: 3rem;
     margin: 0;
     padding: 5px;
     text-align: left;
-
-
 }
 
 header img {
     width: 3rem;
     height: 3rem;
-
 }
 
 nav {
+    font-family: "Caveat", sans-serif;
     display: flex;
     gap: 30px;
     justify-self: end;
@@ -66,13 +60,12 @@ nav {
 
 nav a {
     color: rgb(227, 233, 229);
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     padding: 0.4rem 0;
     text-decoration: none;
     transition: color 3.0, opacity 0.3;
-
 }
 
 nav a:hover {
