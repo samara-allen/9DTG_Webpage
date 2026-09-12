@@ -1,13 +1,18 @@
-style.css
+/* style.css */
+
+html,
+body {
+    min-height: 100%;
+}
 
 body {
-    
-    background: linear-gradient(0deg, #397731,#135534 );
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(0deg, #397731, #135534);
+    background-attachment: fixed;
     color: rgb(17, 44, 23);
-    font-family:fantasy, Helvetica, sans-serif;
+    font-family: Helvetica, sans-serif;
     text-align: center;
-
-
 }
 
 @font-face {
@@ -17,7 +22,7 @@ body {
 }
 
 header {
-   
+
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
@@ -29,7 +34,7 @@ header {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
-    border-radius: 16px; 
+    border-radius: 16px;
     margin: 40px 20px 20px;
     padding: 10px 20px;
 
@@ -39,17 +44,17 @@ header {
 
 header h1 {
     font-family: 'Header font', sans-serif;
-     margin: 0;
+    margin: 0;
     padding: 5px;
     text-align: left;
-    
-    
+
+
 }
 
-header img{
+header img {
     width: 3rem;
     height: 3rem;
-   
+
 }
 
 nav {
@@ -70,33 +75,34 @@ nav a {
 
 }
 
-nav a:hover{
-    color:rgb(245, 238, 215);
+nav a:hover {
+    color: rgb(245, 238, 215);
     transform: translateY(2px);
 }
 
 /* Main element grid*/
 
-main{
+main {
     display: grid;
-    grid-template : 250px repeat(3, lfr);
-gap: 15px
-margin: 0 auto;
-padding: 20px;
-max-width: 1920;
-
+    grid-template: 250px repeat(3, 1fr);
+    gap: 15px;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1920;
 }
 
-article{
-    background: rgba(65, 158, 93, 0.877);
-    backdrop-filter: blur (10px);
-    -webkit-backdrop-filter: (blur);
+article {
+    background: rgba(65, 158, 93, 0.65);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 16px;
     padding: 25px;
     text-align: left;
+    min-width: 20em;
+    max-width: 30em;
 }
 
-article img{
+article img {
     display: blok;
     width: 250px;
     height: 250px;
@@ -105,28 +111,33 @@ article img{
     object-fit: cover;
 }
 
-aside{
-grid-column:1;
-grid-row: 1 / span 2;
-background: rgb(39, 119, 94);
-    backdrop-filter: blur (10px);
-    -webkit-backdrop-filter: (blur);
+aside {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background: rgb(39, 119, 94);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     border-radius: 16px;
     padding: 25px;
     text-align: left;
-
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
     main {
         grid-template-columns: 250px repeat(2, minmax(0, 1fr));
     }
 }
 
-media (max-width: 900px){
+@media (max-width: 900px) {
     main {
         grid-column: 1;
         grid-row: auto;
-
     }
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(17, 44, 23);
+    margin: 20px 0;
 }
