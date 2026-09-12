@@ -84,11 +84,11 @@ nav a:hover {
 
 main {
     display: grid;
-    grid-template: 250px repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 15px;
     margin: 0 auto;
     padding: 20px;
-    max-width: 1920;
+    max-width: 1920px;
 }
 
 article {
@@ -124,14 +124,13 @@ aside {
 
 @media (max-width: 1200px) {
     main {
-        grid-template-columns: 250px repeat(2, minmax(0, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 @media (max-width: 900px) {
     main {
-        grid-column: 1;
-        grid-row: auto;
+        grid-template-columns: 1fr;
     }
 }
 
