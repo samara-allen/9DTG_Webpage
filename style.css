@@ -1,0 +1,132 @@
+style.css
+
+body {
+    
+    background: linear-gradient(0deg, #397731,#135534 );
+    color: rgb(17, 44, 23);
+    font-family:fantasy, Helvetica, sans-serif;
+    text-align: center;
+
+
+}
+
+@font-face {
+    font-family: 'HeaderFont';
+    src: url(fonts/Fancy) format (opentype);
+    font-display: swap;
+}
+
+header {
+   
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 5px;
+
+    /* Header color */
+
+    background: rgba(48, 126, 72, 0.877);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-radius: 16px; 
+    margin: 40px 20px 20px;
+    padding: 10px 20px;
+
+}
+
+
+
+header h1 {
+    font-family: 'Header font', sans-serif;
+     margin: 0;
+    padding: 5px;
+    text-align: left;
+    
+    
+}
+
+header img{
+    width: 3rem;
+    height: 3rem;
+   
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    justify-self: end;
+    line-height: 2rem;
+}
+
+nav a {
+    color: rgb(227, 233, 229);
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 0.4rem 0;
+    text-decoration: none;
+    transition: color 3.0, opacity 0.3;
+
+}
+
+nav a:hover{
+    color:rgb(245, 238, 215);
+    transform: translateY(2px);
+}
+
+/* Main element grid*/
+
+main{
+    display: grid;
+    grid-template : 250px repeat(3, lfr);
+gap: 15px
+margin: 0 auto;
+padding: 20px;
+max-width: 1920;
+
+}
+
+article{
+    background: rgba(65, 158, 93, 0.877);
+    backdrop-filter: blur (10px);
+    -webkit-backdrop-filter: (blur);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: left;
+}
+
+article img{
+    display: blok;
+    width: 250px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+aside{
+grid-column:1;
+grid-row: 1 / span 2;
+background: rgb(39, 119, 94);
+    backdrop-filter: blur (10px);
+    -webkit-backdrop-filter: (blur);
+    border-radius: 16px;
+    padding: 25px;
+    text-align: left;
+
+}
+
+@media (max-width: 1200px){
+    main {
+        grid-template-columns: 250px repeat(2, minmax(0, 1fr));
+    }
+}
+
+media (max-width: 900px){
+    main {
+        grid-column: 1;
+        grid-row: auto;
+
+    }
+}
