@@ -8,9 +8,9 @@ body {
 body {
     margin: 0;
     min-height: 100vh;
-    background: linear-gradient(0deg, #397731, #135534);
+    background: linear-gradient(0deg, #165a23, #29883f);
     background-attachment: fixed;
-    color: rgb(17, 44, 23);
+    color: rgba(22, 79, 36, 0.831);
     font-family: Helvetica, sans-serif;
     text-align: center;
 }
@@ -28,7 +28,7 @@ header {
     gap: 5px;
 
     /* Header colour */
-    background: rgba(48, 126, 72, 0.877);
+    background: rgb(82, 168, 92);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
 
@@ -43,6 +43,7 @@ header h1 {
     margin: 0;
     padding: 5px;
     text-align: left;
+    color: rgba(11, 50, 19, 0.943);
 }
 
 header img {
@@ -59,7 +60,7 @@ nav {
 }
 
 nav a {
-    color: rgb(227, 233, 229);
+    color: rgba(221, 230, 223, 0.836);
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -69,7 +70,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(245, 238, 215);
+    color: rgb(247, 239, 214);
     transform: translateY(2px);
 }
 
@@ -82,10 +83,11 @@ main {
     margin: 0 auto;
     padding: 20px;
     max-width: 1920px;
+
 }
 
 article {
-    background: rgba(65, 158, 93, 0.65);
+    background: rgb(82, 168, 92);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 16px;
@@ -107,7 +109,7 @@ article img {
 aside {
     grid-column: 1;
     grid-row: 1 / span 2;
-    background: rgb(39, 119, 94);
+    background: v;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 16px;
