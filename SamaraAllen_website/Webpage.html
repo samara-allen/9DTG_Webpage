@@ -11,9 +11,9 @@
 
 <body>
     <header>
-        <img
-            src="https://png.pngtree.com/png-vector/20240127/ourmid/pngtree-graphics-drawing-silhouette-two-deer-illustration-transparency-png-image_11500209.png">
-        <h1>Deer </h1>
+        <img src="https://png.pngtree.com/png-vector/20240127/ourmid/pngtree-graphics-drawing-silhouette-two-deer-illustration-transparency-png-image_11500209.png"
+            alt="Deer logo">
+        <h1>Deer</h1>
 
         <nav>
             <a href="https://wildlifeaid.org.uk/wildlife-facts/deer-facts/"> Fun facts!</a>
@@ -27,41 +27,78 @@
     <hr>
 
     <main>
+        <div class="right-float">
+            <img id="spotify-button"
+                src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png"
+                title="Open Spotify player" alt="Spotify logo" onclick="
+                var button = document.getElementById('spotify-button');
+                var widget = document.getElementById('spotify-widget');
+                var currentDisplay = widget.style.display;
+                if (widget.style.display === 'block') {
+                    widget.style.display = 'none';
+                    button.title = 'Open Spotify player';
+                } else {
+                    widget.style.display = 'block';
+                    button.title = 'Close Spotify player';
+                }
+              ">
+        </div>
+        <div id="spotify-widget" class="right-float" style="display:none;">
+            <!-- h4>Nature Sounds Spotify playlist</h4 -->
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4PP3DA4J0N8?utm_source=generator&si=7fa641eeeee4465a"
+                width="100%" height="352" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </div>
 
         <article>
-
             <h4>Habbits and situation</h4>
-            <p> Deer, (family Cervidae), any of 43 species of hoofed ruminants in the order Artiodactyla, notable for
+            <p> Deer, (family Cervidae), any of 43 species of hoofed ruminants in the order Artiodactyla, notable
+                for
                 having two large and two small hooves on each foot and also for having antlers in the males of most
                 species and in the females of one species. Deer are native to all continents except Australia and
-                Antarctica, and many species have been widely introduced beyond their original habitats as game animals.
+                Antarctica, and many species have been widely introduced beyond their original habitats as game
+                animals.
                 One species, the reindeer (also known as the caribou), has been domesticated. Some swamp and island
                 species are endangered, but most continental species are flourishing under protection and good
                 management. Deer, when granted some protection, readily exploit man-made disturbances caused by
                 agriculture, forestry, and urbanization. White-tailed deer, normally a cherished North American game
                 animal, have even become pests in suburbs and cities in the United States and Canada.
 
-                The word deer has been applied at times to species that are not cervids, such as the musk deer (Moschus)
+                The word deer has been applied at times to species that are not cervids, such as the musk deer
+                (Moschus)
                 and mouse deer (Tragulus). However, the former is now placed in a separate family (Moschidae), while
-                mouse deer are actually primitive ruminants of the family Tragulidae. With these exclusions, Cervidae
+                mouse deer are actually primitive ruminants of the family Tragulidae. With these exclusions,
+                Cervidae
                 becomes the deer family, a consistent, natural grouping of species.
 
                 In all but one species of deer, males carry antlers; in the reindeer (Rangifer tarandus), both sexes
                 carry antlers. The single antlerless form, the Chinese water deer (Hydropotes inermis), reflects an
-                earlier pre-antler condition, as is shown by the fossil record. In this primitive condition males have
+                earlier pre-antler condition, as is shown by the fossil record. In this primitive condition males
+                have
                 long, sharp upper canines, called tusks, that are used for slashing and stabbing in territorial
-                contests. Some species carry both antlers and tusks and show a progression of increased antler size and
-                complexity with decreased size and functional structure of the tusks. (Musk deer resemble primitive deer
+                contests. Some species carry both antlers and tusks and show a progression of increased antler size
+                and
+                complexity with decreased size and functional structure of the tusks. (Musk deer resemble primitive
+                deer
                 in that males are armed with tusks.)
                 Deer have several other distinguishing characteristics. All deer lack the gall bladder. Females have
-                four teats. Deer may have scent glands on their legs (metatarsal, tarsal, and pedal glands), but they do
-                not have rectal, vulval, or preputal glands. Deer are specialized herbivores, as is reflected in their
-                large and anatomically complex digestive organs, their mobile lips, and the size and complexity of their
+                four teats. Deer may have scent glands on their legs (metatarsal, tarsal, and pedal glands), but
+                they do
+                not have rectal, vulval, or preputal glands. Deer are specialized herbivores, as is reflected in
+                their
+                large and anatomically complex digestive organs, their mobile lips, and the size and complexity of
+                their
                 teeth. However, deer rely little on coarse-fibred grasses, and they have not evolved grazing
-                specializations comparable to those found in bovids. Instead, they are highly selective feeders on young
-                grasses, herbs, lichens, foliage, buds, aquatic plants, woody shoots, fruit, and natural ensilage—that
-                is, plant food characterized by low fibre but high protein content, toxicity, and digestibility.The bias
-                of deer toward high-quality food has its origin in the very high demands of antler growth for minerals,
+                specializations comparable to those found in bovids. Instead, they are highly selective feeders on
+                young
+                grasses, herbs, lichens, foliage, buds, aquatic plants, woody shoots, fruit, and natural
+                ensilage—that
+                is, plant food characterized by low fibre but high protein content, toxicity, and digestibility.The
+                bias
+                of deer toward high-quality food has its origin in the very high demands of antler growth for
+                minerals,
                 protein, and energy.
             </p>
         </article>
@@ -72,37 +109,57 @@
                 Antlers are “bone horns” that are grown and shed annually. The growing antlers are
                 encased in “velvet,” a highly vascularized, nerve-filled skin covered by short, soft hairs. The
                 blood-engorged, growing antlers are warm to the touch and quite sensitive. Depending on the species,
-                they take up to 150 days to grow, after which the velvet dies and is forcefully removed by rubbing the
-                antlers against branches and small trees. Along with some blood residue, this imparts a brownish colour
+                they take up to 150 days to grow, after which the velvet dies and is forcefully removed by rubbing
+                the
+                antlers against branches and small trees. Along with some blood residue, this imparts a brownish
+                colour
                 to the otherwise white antler bone. Antlers finish growing before the mating season and are used as
-                weapons and shields in combat or as display organs in courtship. Normally shed after the mating season,
-                antlers may be retained in some territorial tropical deer for more than a year. The relative demand for
-                energy and nutrients declines with body size but increases exponentially for antler growth. Therefore,
+                weapons and shields in combat or as display organs in courtship. Normally shed after the mating
+                season,
+                antlers may be retained in some territorial tropical deer for more than a year. The relative demand
+                for
+                energy and nutrients declines with body size but increases exponentially for antler growth.
+                Therefore,
                 large-bodied species require more nutrients and energy to grow antlers than do small-bodied species.
-                These requirements cannot be obtained from grasses but only from nutrient-rich dicotyledonous plants.The
-                requirement for nutrients and energy has severe repercussions on the ecology of deer. It confines deer
+                These requirements cannot be obtained from grasses but only from nutrient-rich dicotyledonous
+                plants.The
+                requirement for nutrients and energy has severe repercussions on the ecology of deer. It confines
+                deer
                 to relatively productive habitats, excluding them from deserts, dry grasslands, and geologically old
                 landscapes leached of nutrients. Moreover, it severely limits the abundance of Cervidae in mature,
                 species-rich faunas in which many herbivore species compete for food. In order to meet their high
                 nutrient demands, deer are specialized to exploit disturbed ecosystems. For instance, after a forest
-                fire, an area normally passes through several ecological plant successions within a few decades before
-                the original conditions are restored. Early plant successions normally contain an abundance of the type
-                of plant food required by deer. Some disturbances, such as river flooding and the rise and fall of lake
+                fire, an area normally passes through several ecological plant successions within a few decades
+                before
+                the original conditions are restored. Early plant successions normally contain an abundance of the
+                type
+                of plant food required by deer. Some disturbances, such as river flooding and the rise and fall of
+                lake
                 levels, occur annually and create local, perpetually immature, nutrient-rich ecosystems. Since
-                disturbances such as wildfires, storm floods, avalanches, or wind-felled trees are unpredictable, deer
+                disturbances such as wildfires, storm floods, avalanches, or wind-felled trees are unpredictable,
+                deer
                 have evolved great abilities to quickly find and colonize such transient habitats. For example, the
-                severe ecological upheaval caused by the extreme climatic oscillations of the Ice Ages greatly favoured
-                deer. Glaciers ground rock into highly fertile waterborne silt and wind-borne loess that refertilized
-                landscapes and rejuvenated the soil. Extinctions swept away warm-climate competitors. From the tropics
+                severe ecological upheaval caused by the extreme climatic oscillations of the Ice Ages greatly
+                favoured
+                deer. Glaciers ground rock into highly fertile waterborne silt and wind-borne loess that
+                refertilized
+                landscapes and rejuvenated the soil. Extinctions swept away warm-climate competitors. From the
+                tropics
                 deer spread to colder and more seasonal landscapes, including the Alps and the Arctic. Like other
-                families of large mammals that colonized extreme Ice Age environments, deer diversified and evolved into
-                grotesque giants that had ornate coat patterns and large, bizarre antlers, which could grow only from
+                families of large mammals that colonized extreme Ice Age environments, deer diversified and evolved
+                into
+                grotesque giants that had ornate coat patterns and large, bizarre antlers, which could grow only
+                from
                 nutrient-rich soils.While deer tend to have broad, somewhat similar food habits, they are highly
                 divergent in their antipredator strategies. This divergence segregates species ecologically and thus
-                minimizes potential food competition between species sharing the same space. A deer species that hides
-                and, if discovered, departs in rapid jumps to hide again requires forests and thickets, while a highly
-                specialized runner needs flat, unobstructed terrain to outrun predators. Specialized jumpers may choose
-                to stay close to steep slopes and rugged terrain and thus avoid areas frequented by species that run and
+                minimizes potential food competition between species sharing the same space. A deer species that
+                hides
+                and, if discovered, departs in rapid jumps to hide again requires forests and thickets, while a
+                highly
+                specialized runner needs flat, unobstructed terrain to outrun predators. Specialized jumpers may
+                choose
+                to stay close to steep slopes and rugged terrain and thus avoid areas frequented by species that run
+                and
                 jump, while cliff climbers may exploit gradients and altitudes closed to others.
             </p>
         </article>
@@ -110,8 +167,10 @@
         <article>
             <h4>Old and New World deer</h4>
             <p>
-                The family Cervidae divides into two fairly distinct groups, the Old World deer (subfamily Cervinae) and
-                the New World deer (subfamily Capreolinae). This division reflects where the deer originally evolved;
+                The family Cervidae divides into two fairly distinct groups, the Old World deer (subfamily Cervinae)
+                and
+                the New World deer (subfamily Capreolinae). This division reflects where the deer originally
+                evolved;
                 however, now it is not a geographical distinction but instead derives from their different foot
                 structures. In the Old World deer the second and fifth hand bones (metapodia) have almost completely
                 disappeared except for proximal, terminal remnants. In the New World deer the remnants are distal.
@@ -121,23 +180,33 @@
             </h5>
             <p>
                 The Old World deer include the 11 species of tropical Asian muntjacs (genus Muntiacus), the
-                most primitive deer; males bear tusks and antlers on tall antler pedicles. The next evolutionary step is
-                represented by tropical and subtropical deer that have a basic three-pronged antler plan. They include
+                most primitive deer; males bear tusks and antlers on tall antler pedicles. The next evolutionary
+                step is
+                represented by tropical and subtropical deer that have a basic three-pronged antler plan. They
+                include
                 giants such as the sambar of India (Cervus unicolor); three species of large swamp deer of India and
                 Southeast Asia, namely the barasingha (C. duvaucelii), Eld’s deer (C. eldii), and the now-extinct
-                Schomburgk’s deer (C. schomburgki); the gregarious chital (Axis axis) of India and Sri Lanka and Timor
-                deer (C. timorensis) of Indonesia; the small hog deer (A. porcinus) of India; and a plethora of small
+                Schomburgk’s deer (C. schomburgki); the gregarious chital (Axis axis) of India and Sri Lanka and
+                Timor
+                deer (C. timorensis) of Indonesia; the small hog deer (A. porcinus) of India; and a plethora of
+                small
                 island species, including the Bawean deer (A. kuhlii) of Indonesia and the Calamian deer (A.
-                calamianensis), Visayan deer (C. alfredi), and Philippine brown deer (C. mariannus), all three of the
-                Philippines. In these species one sees the same basic “deer design” diversified into a large number of
+                calamianensis), Visayan deer (C. alfredi), and Philippine brown deer (C. mariannus), all three of
+                the
+                Philippines. In these species one sees the same basic “deer design” diversified into a large number
+                of
                 ecological niches. Old World deer with a basic four-pronged antler structure occupy temperate zones.
                 These include the sika (C. nippon) of Japan and the fallow deer (Dama dama) of Asia Minor. The sika
                 stands at the base of a great radiation of species that led to the red deer (C. elaphus) and elk (C.
                 elaphus canadensis), the great cold-adapted deer of Eurasia and North America sporting five- and
-                six-pronged antlers. The fallow deer is the last survivor of a radiation of giant Pleistocene deer, the
-                most spectacular of which was the Irish elk (Megaloceros), which weighed 600 kg (1,300 pounds) and whose
-                antlers spread up to 4 metres (14 feet) in width. The white-lipped deer (C. albirostris) of the Tibetan
-                Plateau and Père David’s deer (Elaphurus davidianus) of the swamps along China’s major rivers complete
+                six-pronged antlers. The fallow deer is the last survivor of a radiation of giant Pleistocene deer,
+                the
+                most spectacular of which was the Irish elk (Megaloceros), which weighed 600 kg (1,300 pounds) and
+                whose
+                antlers spread up to 4 metres (14 feet) in width. The white-lipped deer (C. albirostris) of the
+                Tibetan
+                Plateau and Père David’s deer (Elaphurus davidianus) of the swamps along China’s major rivers
+                complete
                 the category of Old World deer.
             </p>
             <h5>
@@ -147,12 +216,17 @@
                 The New World deer came from a separate radiation that colonized North and South America
                 and Eurasia. Among the grotesque giants that evolved in the Ice Age are the moose (Alces alces), the
                 largest of all deer, standing 2 metres (7 feet) or more at the shoulder, and the reindeer, the most
-                plains-adapted runner among deer with relatively large antlers. Also cold-adapted are the tiny Eurasian
+                plains-adapted runner among deer with relatively large antlers. Also cold-adapted are the tiny
+                Eurasian
                 roe deer (Capreolus species) and the small, antlerless Chinese water deer of Korea and China. In the
-                Americas the white-tailed deer (Odocoileus virginianus) colonized both continents. Its closest relative,
-                the mule deer (O. hemionus), occupies western North America. Dwarf brocket deer (genus Mazama) are found
-                southward from Mexico into Argentina. Two species of the tiniest deer, the pudu (genus Pudu), standing
-                only 30 cm (12 inches) at the shoulder, live far apart in the central Andes and southern Chile, as do
+                Americas the white-tailed deer (Odocoileus virginianus) colonized both continents. Its closest
+                relative,
+                the mule deer (O. hemionus), occupies western North America. Dwarf brocket deer (genus Mazama) are
+                found
+                southward from Mexico into Argentina. Two species of the tiniest deer, the pudu (genus Pudu),
+                standing
+                only 30 cm (12 inches) at the shoulder, live far apart in the central Andes and southern Chile, as
+                do
                 two species of the larger, rock-climbing Andean deer (genus Hippocamelus). The small pampas deer
                 (Ozotoceros bezoarticus) and the red deer-sized marsh deer (Blastocerus dichotomus), both of South
                 America, are endangered. </p>
@@ -169,22 +243,13 @@
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqeHB2BXbe0i8JXj_69il3o9dIN2YOmZEyv1HSOph28Q&s=10">
         </article>
 
-        <article>
-            <h4>Nature Sounds Spotify playlist</h4>
-            <iframe data-testid="embed-iframe" style="border-radius:12px"
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4PP3DA4J0N8?utm_source=generator&si=7fa641eeeee4465a"
-                width="100%" height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
-        </article>
-
         <audio loop autoplay>
             <source src="images/Liana Flores - rises the moon.mp3" type="audio/mp3">
         </audio>
-
     </main>
-    <footer> Random Deer website> By Samara </footer>
-
+    <footer>
+        Random Deer website &bullet; By Samara
+    </footer>
 
 </body>
 
