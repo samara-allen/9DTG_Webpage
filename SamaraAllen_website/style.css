@@ -74,6 +74,9 @@ nav a:hover {
     transform: translateY(2px);
 }
 
+h2, h3, h4 {
+    color: rgba(13, 52, 21, 0.943);
+}
 /* Main element grid*/
 
 main {
@@ -109,7 +112,7 @@ article img {
 aside {
     grid-column: 1;
     grid-row: 1 / span 2;
-    background: v;
+    background: rgb(39, 119, 94);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 16px;
